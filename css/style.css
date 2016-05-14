@@ -1,0 +1,44 @@
+.map{
+	margin-top: 10px;
+}
+
+.siteTitle {
+    font-size: 24pt;
+    font-family: Garamond;
+    color:#ff4d4d;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gratLines {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 1px;
+}
+
+.gratBackground {
+    fill: white;
+}
+
+.regions {
+	stroke: #fff;
+	stroke-width: 2px;
+	/*stroke-linecap: round;*/
+}
+
+.chart {
+    float: right;
+    margin: 7px 20px 0 5px;
+    position: absolute;
+    
+}
+
+.chartFrame {
+	fill: red;
+}
+
+.chartBackground {
+	fill: white;
+
+}
