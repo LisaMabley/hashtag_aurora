@@ -1,0 +1,359 @@
+[
+  {
+    "name": "Alabama",
+    "#HackTheGap2016": 19.9,
+    "#WomenInTech": 3.08,
+    "#FullStackHuman": 79.33,
+    "#ThingsYouHearAtHackathons": 17.4
+  },
+  {
+    "name": "Alaska",
+    "#HackTheGap2016": 11.4,
+    "#WomenInTech": 2.22,
+    "#FullStackHuman": 35.95,
+    "#ThingsYouHearAtHackathons": 11.9
+  },
+  {
+    "name": "Arizona",
+    "#HackTheGap2016": 16.6,
+    "#WomenInTech": 1.98,
+    "#FullStackHuman": 53.42,
+    "#ThingsYouHearAtHackathons": 15.5
+  },
+  {
+    "name": "Arkansas",
+    "#HackTheGap2016": 20,
+    "#WomenInTech": 3.13,
+    "#FullStackHuman": 65.29,
+    "#ThingsYouHearAtHackathons": 18.2
+  },
+  {
+    "name": "California",
+    "#HackTheGap2016": 14.4,
+    "#WomenInTech": 1.79,
+    "#FullStackHuman": 68.55,
+    "#ThingsYouHearAtHackathons": 13.5
+  },
+  {
+    "name": "Colorado",
+    "#HackTheGap2016": 14.4,
+    "#WomenInTech": 1.96,
+    "#FullStackHuman": 58.14,
+    "#ThingsYouHearAtHackathons": 13.1
+  },
+  {
+    "name": "Connecticut",
+    "#HackTheGap2016": 17.6,
+    "#WomenInTech": 2.17,
+    "#FullStackHuman": 14.82,
+    "#ThingsYouHearAtHackathons": 11.3
+  },
+  {
+    "name": "Delaware",
+    "#HackTheGap2016": 19.1,
+    "#WomenInTech": 2.19,
+    "#FullStackHuman": 93.75,
+    "#ThingsYouHearAtHackathons": 10.8
+  },
+  {
+    "name": "DistrictofColumbia",
+    "#HackTheGap2016": 13.2,
+    "#WomenInTech": 5.38,
+    "#FullStackHuman": 50.35,
+    "#ThingsYouHearAtHackathons": 10.5
+  },
+  {
+    "name": "Florida",
+    "#HackTheGap2016": 19.9,
+    "#WomenInTech": 2.69,
+    "#FullStackHuman": 42.59,
+    "#ThingsYouHearAtHackathons": 17.6
+  },
+  {
+    "name": "Georgia",
+    "#HackTheGap2016": 14.9,
+    "#WomenInTech": 2.42,
+    "#FullStackHuman": 59.01,
+    "#ThingsYouHearAtHackathons": 19
+  },
+  {
+    "name": "Hawaii",
+    "#HackTheGap2016": 17.1,
+    "#WomenInTech": 2.02,
+    "#FullStackHuman": 60.58,
+    "#ThingsYouHearAtHackathons": 8.7
+  },
+  {
+    "name": "Idaho",
+    "#HackTheGap2016": 17,
+    "#WomenInTech": 2.03,
+    "#FullStackHuman": 62.89,
+    "#ThingsYouHearAtHackathons": 15.8
+  },
+  {
+    "name": "Illinois",
+    "#HackTheGap2016": 16.1,
+    "#WomenInTech": 2.45,
+    "#FullStackHuman": 60.37,
+    "#ThingsYouHearAtHackathons": 12.4
+  },
+  {
+    "name": "Indiana",
+    "#HackTheGap2016": 17.4,
+    "#WomenInTech": 2.61,
+    "#FullStackHuman": 72.29,
+    "#ThingsYouHearAtHackathons": 15.1
+  },
+  {
+    "name": "Iowa",
+    "#HackTheGap2016": 18.3,
+    "#WomenInTech": 3.13,
+    "#FullStackHuman": 68.43,
+    "#ThingsYouHearAtHackathons": 8.8
+  },
+  {
+    "name": "Kansas",
+    "#HackTheGap2016": 16.7,
+    "#WomenInTech": 3.45,
+    "#FullStackHuman": 70.45,
+    "#ThingsYouHearAtHackathons": 12.5
+  },
+  {
+    "name": "Kentucky",
+    "#HackTheGap2016": 19.5,
+    "#WomenInTech": 3.17,
+    "#FullStackHuman": 79.14,
+    "#ThingsYouHearAtHackathons": 15.9
+  },
+  {
+    "name": "Louisiana",
+    "#HackTheGap2016": 17,
+    "#WomenInTech": 3.24,
+    "#FullStackHuman": 78.14,
+    "#ThingsYouHearAtHackathons": 17.4
+  },
+  {
+    "name": "Maine",
+    "#HackTheGap2016": 23.1,
+    "#WomenInTech": 2.54,
+    "#FullStackHuman": 56.32,
+    "#ThingsYouHearAtHackathons": 10.9
+  },
+  {
+    "name": "Maryland",
+    "#HackTheGap2016": 15.5,
+    "#WomenInTech": 2.01,
+    "#FullStackHuman": 55.31,
+    "#ThingsYouHearAtHackathons": 10.1
+  },
+  {
+    "name": "Massachusetts",
+    "#HackTheGap2016": 17.9,
+    "#WomenInTech": 2.38,
+    "#FullStackHuman": 56.27,
+    "#ThingsYouHearAtHackathons": 8.3
+  },
+  {
+    "name": "Michigan",
+    "#HackTheGap2016": 19.1,
+    "#WomenInTech": 2.46,
+    "#FullStackHuman": 63.63,
+    "#ThingsYouHearAtHackathons": 14.6
+  },
+  {
+    "name": "Minnesota",
+    "#HackTheGap2016": 16.6,
+    "#WomenInTech": 2.67,
+    "#FullStackHuman": 59.9,
+    "#ThingsYouHearAtHackathons": 9.2
+  },
+  {
+    "name": "Mississippi",
+    "#HackTheGap2016": 18.7,
+    "#WomenInTech": 4.17,
+    "#FullStackHuman": 59.8,
+    "#ThingsYouHearAtHackathons": 19.4
+  },
+  {
+    "name": "Missouri",
+    "#HackTheGap2016": 18.7,
+    "#WomenInTech": 3.07,
+    "#FullStackHuman": 38.61,
+    "#ThingsYouHearAtHackathons": 13.7
+  },
+  {
+    "name": "Montana",
+    "#HackTheGap2016": 19.5,
+    "#WomenInTech": 3.6,
+    "#FullStackHuman": 51.9,
+    "#ThingsYouHearAtHackathons": 11.9
+  },
+  {
+    "name": "Nebraska",
+    "#HackTheGap2016": 16.5,
+    "#WomenInTech": 3.55,
+    "#FullStackHuman": 43.16,
+    "#ThingsYouHearAtHackathons": 11.8
+  },
+  {
+    "name": "Nevada",
+    "#HackTheGap2016": 15.7,
+    "#WomenInTech": 1.95,
+    "#FullStackHuman": 53.4,
+    "#ThingsYouHearAtHackathons": 17.2
+  },
+  {
+    "name": "NewHampshire",
+    "#HackTheGap2016": 20,
+    "#WomenInTech": 2.14,
+    "#FullStackHuman": 58.23,
+    "#ThingsYouHearAtHackathons": 11.1
+  },
+  {
+    "name": "NewJersey",
+    "#HackTheGap2016": 16.7,
+    "#WomenInTech": 2.3,
+    "#FullStackHuman": 59.92,
+    "#ThingsYouHearAtHackathons": 14
+  },
+  {
+    "name": "NewMexico",
+    "#HackTheGap2016": 17.9,
+    "#WomenInTech": 1.81,
+    "#FullStackHuman": 42.56,
+    "#ThingsYouHearAtHackathons": 17.2
+  },
+  {
+    "name": "NewYork",
+    "#HackTheGap2016": 16.9,
+    "#WomenInTech": 2.8,
+    "#FullStackHuman": 45.26,
+    "#ThingsYouHearAtHackathons": 14
+  },
+  {
+    "name": "NorthCarolina",
+    "#HackTheGap2016": 17.6,
+    "#WomenInTech": 2.22,
+    "#FullStackHuman": 48.92,
+    "#ThingsYouHearAtHackathons": 16.2
+  },
+  {
+    "name": "NorthDakota",
+    "#HackTheGap2016": 15.7,
+    "#WomenInTech": 4.25,
+    "#FullStackHuman": 39.25,
+    "#ThingsYouHearAtHackathons": 7
+  },
+  {
+    "name": "Ohio",
+    "#HackTheGap2016": 18.6,
+    "#WomenInTech": 2.9,
+    "#FullStackHuman": 71.7,
+    "#ThingsYouHearAtHackathons": 13.1
+  },
+  {
+    "name": "Oklahoma",
+    "#HackTheGap2016": 17.4,
+    "#WomenInTech": 2.9,
+    "#FullStackHuman": 63.81,
+    "#ThingsYouHearAtHackathons": 15
+  },
+  {
+    "name": "Oregon",
+    "#HackTheGap2016": 18.7,
+    "#WomenInTech": 1.7,
+    "#FullStackHuman": 56.31,
+    "#ThingsYouHearAtHackathons": 14.4
+  },
+  {
+    "name": "Pennsylvania",
+    "#HackTheGap2016": 19.8,
+    "#WomenInTech": 2.98,
+    "#FullStackHuman": 64.23,
+    "#ThingsYouHearAtHackathons": 11.8
+  },
+  {
+    "name": "RhodeIsland",
+    "#HackTheGap2016": 19.2,
+    "#WomenInTech": 2.13,
+    "#FullStackHuman": 33.39,
+    "#ThingsYouHearAtHackathons": 11.9
+  },
+  {
+    "name": "SouthCarolina",
+    "#HackTheGap2016": 19.2,
+    "#WomenInTech": 2.53,
+    "#FullStackHuman": 75.49,
+    "#ThingsYouHearAtHackathons": 18.1
+  },
+  {
+    "name": "SouthDakota",
+    "#HackTheGap2016": 18.2,
+    "#WomenInTech": 4.79,
+    "#FullStackHuman": 44.68,
+    "#ThingsYouHearAtHackathons": 10
+  },
+  {
+    "name": "Tennessee",
+    "#HackTheGap2016": 18.7,
+    "#WomenInTech": 3.06,
+    "#FullStackHuman": 73.7,
+    "#ThingsYouHearAtHackathons": 15.5
+  },
+  {
+    "name": "Texas",
+    "#HackTheGap2016": 13.2,
+    "#WomenInTech": 2.28,
+    "#FullStackHuman": 71.06,
+    "#ThingsYouHearAtHackathons": 17.6
+  },
+  {
+    "name": "Utah",
+    "#HackTheGap2016": 11.5,
+    "#WomenInTech": 1.77,
+    "#FullStackHuman": 67.5,
+    "#ThingsYouHearAtHackathons": 14.3
+  },
+  {
+    "name": "Vermont",
+    "#HackTheGap2016": 21,
+    "#WomenInTech": 1.92,
+    "#FullStackHuman": 55,
+    "#ThingsYouHearAtHackathons": 9.1
+  },
+  {
+    "name": "Virginia",
+    "#HackTheGap2016": 16.1,
+    "#WomenInTech": 2.19,
+    "#FullStackHuman": 73.52,
+    "#ThingsYouHearAtHackathons": 13.1
+  },
+  {
+    "name": "Washington",
+    "#HackTheGap2016": 16.6,
+    "#WomenInTech": 1.7,
+    "#FullStackHuman": 46.71,
+    "#ThingsYouHearAtHackathons": 12.3
+  },
+  {
+    "name": "WestVirginia",
+    "#HackTheGap2016": 22.6,
+    "#WomenInTech": 3.7,
+    "#FullStackHuman": 75.6,
+    "#ThingsYouHearAtHackathons": 16.5
+  },
+  {
+    "name": "Wisconsin",
+    "#HackTheGap2016": 18.2,
+    "#WomenInTech": 2.2,
+    "#FullStackHuman": 70.98,
+    "#ThingsYouHearAtHackathons": 10.6
+  },
+  {
+    "name": "Wyoming",
+    "#HackTheGap2016": 16.2,
+    "#WomenInTech": 3.14,
+    "#FullStackHuman": 64.05,
+    "#ThingsYouHearAtHackathons": 11.8
+  }
+]

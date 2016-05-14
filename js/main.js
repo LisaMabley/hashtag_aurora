@@ -51,7 +51,7 @@ function setMap () {
 	//queue
     //use queue.js to parallelize asynchronous data loading
     q
-        // .defer(d3.csv, "data/lab2data.csv") //load attributes from csv
+        .defer(d3.json, "data/tweets.json") //load sample tweets
         .defer(d3.json, "data/usa.topojson") //load background spatial data
         .await(callback);
 
