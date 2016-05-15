@@ -7,7 +7,8 @@
     <script src="assets/scripts/client.min.js"></script>
 
   </head>
-  <body ng-controller="IndexController">
+  <body ng-controller="IndexController as index">
     <h1>TEST</h1>
+    <p ng-repeat="tweetData in index.twitterStuff">{{tweetData}}</p>
   </body>
 </html>

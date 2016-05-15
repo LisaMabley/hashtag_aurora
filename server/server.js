@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 // Import routers
+var router = require('./routes/index');
 var tweetRouter = require('./routes/tweets');
 
 // APP CONFIG
@@ -16,7 +17,8 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 app.use(express.static('server/public'));
 
 // Config: router
-app.use('/', tweetRouter);
+app.use('/', router);
+app.use('/tweets', tweetRouter);
 
 var port = process.env.PORT || 3000;
 var server = app.listen(port, function () {
