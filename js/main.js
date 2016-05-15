@@ -87,7 +87,7 @@ function callback (error, twitter_data, states) {
 
     setChart (tweets, colorScale);
     createDropdown(tweets);
-
+   
     //    dynamicScale (csvData);
 };
 
@@ -348,11 +348,11 @@ function joinData (northAmerica, tweets) {
 
 function makeColorScale(data) {
     var colorClasses = [
-        "#f7f7f7",
-        "#cccccc",
-        "#969696",
-        "#636363",
-        "#252525"
+        "#f0f9e8",
+        "#bae4bc",
+        "#7bccc4",
+        "#43a2ca",
+        "#0868ac"
     ];
     //create color sequence generator
     var colorScale = d3.scale.quantile ()
@@ -415,5 +415,4 @@ function moveLabel () {
 
 })();
 
-// dynamic y scale
 
