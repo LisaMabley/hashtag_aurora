@@ -2,8 +2,7 @@
 body {
   padding-bottom: 20px;
   padding-top: 20px;
-  background-color: gray;
-  background-image: url("gradient.jpeg");
+  background-color: #fff;
 
 
 
@@ -30,12 +29,10 @@ h1:hover{
     float: right;
     position: relative;
     color: #8c5393;
-    font-size: 80pt;
-    font-family: Garamond;
+    font-size: 70pt;
 }
 .navbar {
     width: 1060px;
-    height: 300px;
     background-color: white;
 }
 
@@ -55,7 +52,6 @@ h1:hover{
 }*/
 #logo {
     width: 200px;
-    height: 215px;
     vertical-align: center;
     float: right;
 }
@@ -167,7 +163,7 @@ ul.nav.navbar-nav {
 
 .dropdown {
     position: absolute;
-    top: 350px;
+    top: 230px;
     left: 20px;
     z-index: 10;
     font-family: sans-serif;

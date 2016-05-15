@@ -213,7 +213,7 @@ function updateChart (bars, n, colorScale) {
         return choropleth(d, colorScale);
         });
     var chartTitle = d3.select(".chartTitle")
-        .text("Number of " + expressed + " tweets from each state");
+        .text("Number of #" + expressed + " tweets from each state");
 
 
 };
@@ -348,11 +348,11 @@ function joinData (northAmerica, tweets) {
 
 function makeColorScale(data) {
     var colorClasses = [
-        "#f0f9e8",
-        "#bae4bc",
-        "#7bccc4",
-        "#43a2ca",
-        "#0868ac"
+        "#edf8fb",
+        "#b3cde3",
+        "#8c96c6",
+        "#8856a7",
+        "#810f7c"
     ];
     //create color sequence generator
     var colorScale = d3.scale.quantile ()
@@ -370,8 +370,12 @@ function makeColorScale(data) {
 };
 
 function setLabel (props){
+	var number = 0;
+	if ( props[expressed] ) {
+		number = props[expressed]
+	}
     //label content
-    var labelAttribute = "<h1>" + props[expressed] +
+    var labelAttribute = "<h1>" + number +
         "</h1><b>" + expressed + "</b>";
     //create info label div
     var infolabel = d3.select("body")
