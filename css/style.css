@@ -1,15 +1,53 @@
+body {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+h1 {
+    position:absolute;
+    top:-0.25em;
+    left: 10em;
+    font-size: 72px;
+    letter-spacing: -1px;
+    font-family: helvetica;
+  background-image: linear-gradient(to bottom, #AC4CA6 0%, #92D420 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 12px rgba(230, 85, 9, 0.2);
+  transition: all 0.5s ease;
+}
+h1:hover{
+    text-shadow: 0px 0px 12px rgba(230, 85, 9, 0.7);
+}
+.navbar-header {
+    margin: 15px;
+}
+#hashtag {
+    font-size:3.8em;
+    vertical-align: middle;
+}
+input {
+    height:3.8em;
+    width: 15em;
+    font-size:20px;
+    text-align:center;
+    vertical-align:middle; 
+}
+ul.nav.navbar-nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .map{
 	margin-top: 10px;
 }
 
-.siteTitle {
+/*.siteTitle {
     font-size: 24pt;
     font-family: Garamond;
     color:#ff4d4d;
     position: absolute;
     font-weight: bold;
     text-align: center;
-}
+}*/
 
 .gratLines {
 	fill: none;
@@ -36,6 +74,15 @@
 
 .chartFrame {
 	fill: white;
+}
+
+
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    fill: #ff4d4d;
+
 }
 
 .chartBackground {

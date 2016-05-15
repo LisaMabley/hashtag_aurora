@@ -10,10 +10,10 @@ var yScale = d3.scale.linear ()
         .range([0, 460])
         .domain([100, 0]);
 
-var chartWidth = window.innerWidth * 0.5,
+var chartWidth = window.innerWidth * 0.3,
         chartHeight = 473,
-        leftPadding = 25,
-        rightPadding = 2, 
+        leftPadding = 30,
+        rightPadding = 5, 
         topBottomPadding = 5,
         chartInnerWidth = chartWidth - leftPadding,
         chartInnerHeight = chartHeight - topBottomPadding * 2;
@@ -27,10 +27,10 @@ function setMap () {
 	var width = window.innerWidth * 0.6
 	height = 500;
 
-	var siteTitle = d3.select("body")
-        .append("text")
-        .attr("class", "siteTitle")
-        .html("Aurora Tweet");
+	// var siteTitle = d3.select("body")
+ //        .append("text")
+ //        .attr("class", "siteTitle")
+ //        .html("Aurora Tweet");
 
     var map = d3.select("body")
         .append("svg")
@@ -73,9 +73,10 @@ function callback (error, tweets, states) {
   //           .append("path")
   //           .attr("d," path);
 
-    northAmerica = joinData(northAmerica, tweets);
-
     var colorScale = makeColorScale(tweets);
+    northAmerica = joinData(northAmerica, tweets);
+    setEnumerationUnits (northAmerica, map, path, colorScale);
+
     setChart (tweets, colorScale);
     createDropdown(tweets);
 
@@ -156,6 +157,33 @@ function changeAttribute(attribute, tweets){
         updateChart (bars, tweets.length, colorScale);
     }; 
 
+function setEnumerationUnits (northAmerica, map, path, colorScale){
+        var regions = map.selectAll(".regions")
+            .data(northAmerica)
+            .enter()
+            .append("path")
+            .attr("class", function(d){
+                return "regions " + d.properties.name;
+            })
+            .attr("d", path)
+            .style("fill", function(d){
+                return choropleth(d.properties, colorScale);
+            })
+            .on("mouseover", function(d){
+                highlight(d.properties);
+            })
+            .on("mouseout", function(d){
+                dehighlight(d.properties);
+            })
+            .on("mousemove", moveLabel);
+
+        var desc = regions.append("desc")
+            .text('{"stroke": "#000", "stroke-width": "0.5px"}');
+
+    };
+
+
+
 function updateChart (bars, n, colorScale) {
         bars.attr("x", function(d, i){
         return i * (chartInnerWidth / n ) + leftPadding;
@@ -172,7 +200,7 @@ function updateChart (bars, n, colorScale) {
         return choropleth(d, colorScale);
         });
     var chartTitle = d3.select(".chartTitle")
-        .text("Number of " + expressed + " in each state");
+        .text("Number of " + expressed + " tweets from each state");
 
 
 };
@@ -192,7 +220,7 @@ function highlight(props){
     //change stroke
     var selected = d3.selectAll ("." + props.name)
         .style({
-            "stroke": "#ff4d4d",
+            "stroke": "#C58162",
             "stroke-width": "2.5"
         });
     setLabel(props);
@@ -301,15 +329,17 @@ function joinData (northAmerica, tweets) {
             };
         };
     };
+
+    return northAmerica;
 };
 
 function makeColorScale(data) {
     var colorClasses = [
-        "#ccf2ff",
-        "#66d9ff",
-        "#00bfff",
-        "#007399",
-        "#002633"
+        "#3FAB72",
+        "#4B8A74",
+        "#566E77",
+        "#67417A",
+        "#7F0380"
     ];
     //create color sequence generator
     var colorScale = d3.scale.quantile ()
@@ -372,15 +402,5 @@ function moveLabel () {
 
 })();
 
-//attribute
-//expressed
-//make color scale
-//play through months
-//on click functions
-//chart
-//chart styling
-//contextual information
-//highlighting
-//hovers and popups
-
+// dynamic y scale
 
