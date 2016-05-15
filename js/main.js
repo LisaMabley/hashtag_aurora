@@ -10,8 +10,8 @@ var yScale = d3.scale.linear ()
         .range([0, 460])
         .domain([100, 0]);
 
-var chartWidth = window.innerWidth * 0.3,
-        chartHeight = 473,
+var chartWidth = window.innerWidth * 0.45,
+        chartHeight = 470,
         leftPadding = 30,
         rightPadding = 5, 
         topBottomPadding = 5,
@@ -24,7 +24,7 @@ window.onload = setMap();
 
 
 function setMap () {
-	var width = window.innerWidth * 0.6
+	var width = window.innerWidth * 0.5
 	height = 500;
 
 	// var siteTitle = d3.select("body")
@@ -87,6 +87,11 @@ function setGraticule (map, path) {
 
        var graticule = d3.geo.graticule()
             .step([5, 5]); //place graticule lines every 5 degrees of longitude and latitude
+        // var background = d3.select
+        // map.append("svg")
+        // .attr("width", width - leftPadding - 20)
+        // .attr("height", height - topBottomPadding - 10)
+        // .attr("class", "background")
 
        var gratBackground = map.append("path")
             .datum(graticule.outline()) //bind graticule background
@@ -335,11 +340,11 @@ function joinData (northAmerica, tweets) {
 
 function makeColorScale(data) {
     var colorClasses = [
-        "#3FAB72",
-        "#4B8A74",
-        "#566E77",
-        "#67417A",
-        "#7F0380"
+        "#f7f7f7",
+        "#cccccc",
+        "#969696",
+        "#636363",
+        "#252525"
     ];
     //create color sequence generator
     var colorScale = d3.scale.quantile ()
