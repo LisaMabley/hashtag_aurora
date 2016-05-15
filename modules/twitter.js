@@ -41,17 +41,25 @@ var client = new Twitter({
 //       }
 //   });
 // };
+var cachedTweets = {};
+var getTweets = function(searchTerm, callback, caller) {
 
-var getTweets = function(searchTerm) {
   var hashtag = '#' + searchTerm;
 
+  if ( cachedTweets[hashtag] ) {
+	  return cachedTweets[hashtag];
+  }
+
   // Get tweets containing the hashtag
-  client.get('search/tweets', {q: hashtag}, function(error, tweets, response){
+  client.get('search/tweets', {q: hashtag, count: 100}, function(error, tweets, response){
+
     if(error) {
       console.log(error);
     };
-      console.log(tweets);
-      return tweets;
+
+	console.log( 'NEW QUERY hashtag' );
+	cachedTweets[hashtag] = tweets; 
+	caller.send( callback( tweets ) );
   });
 }
 

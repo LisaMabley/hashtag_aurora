@@ -2,8 +2,8 @@
 ///map and chart portion
 (function () {
 
-var attrArray = ["#HackTheGap2016", "#WomenInTech", "#FullStackHuman", "#ThingsYouHearAtHackathons"];
-var expressed = attrArray[0];
+var attrArray;
+var expressed;
 
 
 var yScale = d3.scale.linear ()
@@ -53,12 +53,17 @@ function setMap () {
 	//queue
     //use queue.js to parallelize asynchronous data loading
     q
-        .defer(d3.json, "data/tweets.json") //load sample tweets
+        .defer(d3.json, "http://localhost:3000/tweets?q=ClimateChange") //load sample tweets
         .defer(d3.json, "data/usa.topojson") //load background spatial data
         .await(callback);
 
 
-function callback (error, tweets, states) {
+function callback (error, twitter_data, states) {
+	var tweets = twitter_data.tweets;
+	attrArray = twitter_data.header;
+	expressed = attrArray[0];
+
+
 	 setGraticule(map, path);
 	 var northAmerica = topojson.feature(states, states.objects.usa).features;
 
