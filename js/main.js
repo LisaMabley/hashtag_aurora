@@ -52,8 +52,11 @@ function setMap () {
     var q = d3_queue.queue();
 	//queue
     //use queue.js to parallelize asynchronous data loading
+    var query_string = window.location.href,
+        regex = new RegExp("[?&]q(=([^&#]*)|&|#|$)"),
+        results = regex.exec(query_string);
     q
-        .defer(d3.json, "http://localhost:3000/tweets?q=ClimateChange") //load sample tweets
+        .defer(d3.json, "http://localhost:3000/tweets?q="+results[2]) //load sample tweets
         .defer(d3.json, "data/usa.topojson") //load background spatial data
         .await(callback);
 

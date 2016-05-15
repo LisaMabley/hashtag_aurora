@@ -11,6 +11,7 @@ router.get('/', function(request, response) {
 
 	var hashtag;
 
+	console.log( 'searching: ' + hashtag );
 	// Validate the hashtag entered
 	if ( ! ( hashtag = validate_hashtag( request ) ) ) {
 		console.log( 'Received a bad hashtag: ' + hashtag );
@@ -54,28 +55,28 @@ function parse_data ( tweets ) {
 	for (var key in tweets.statuses) {
 
 		var state = get_random_state();
-		console.log( "------" + state+ "-------" );
+		//console.log( "------" + state+ "-------" );
 		//console.log( tweets.statuses[key].coordinates);
-		console.log( "\nhashtags: " );
+		//console.log( "\nhashtags: " );
 
-		console.log( "coord: " + tweets.statuses[key].coordinates);
+		//console.log( "coord: " + tweets.statuses[key].coordinates);
 		for (var tag_key in tweets.statuses[key].entities.hashtags) {
-			var hashtag = tweets.statuses[key].entities.hashtags[tag_key].text;
+			var hashtag = tweets.statuses[key].entities.hashtags[tag_key].text.toLowerCase();
 
 			if ( header.indexOf(hashtag) == -1 ) {
 				header.push( hashtag );
 			}
 
-			console.log( 'hashtag: ' + hashtag);
+			//console.log( 'hashtag: ' + hashtag);
 
 				if ( ! data[state] ) {
-					console.log( 'starting ' + state );
+					//console.log( 'starting ' + state );
 					data[state] = {};
 					data[state][hashtag] = 0;
 				}
 
 				if ( data[state][hashtag] ) {
-					console.log( '     adding to' + state );
+					//console.log( '     adding to' + state );
 					data[state][hashtag]++;
 				}
 				else {
@@ -105,7 +106,7 @@ function parse_data ( tweets ) {
 }
 
 function get_random_state( ) {
-	var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+	var states = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","NewHampshire","NewJersey","NewMexico","NewYork","NorthCarolina","NorthDakota","Ohio","Oklahoma","Oregon","Pennsylvania","RhodeIsland","SouthCarolina","SouthDakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","WestVirginia","Wisconsin","Wyoming"];
 
 	var rand = Math.floor(Math.random() * states.length + 0);
 	var count = 0;

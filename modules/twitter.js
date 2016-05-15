@@ -47,7 +47,8 @@ var getTweets = function(searchTerm, callback, caller) {
   var hashtag = '#' + searchTerm;
 
   if ( cachedTweets[hashtag] ) {
-	  return cachedTweets[hashtag];
+	caller.send( callback( cachedTweets[hashtag]) );
+	return;
   }
 
   // Get tweets containing the hashtag
@@ -57,7 +58,6 @@ var getTweets = function(searchTerm, callback, caller) {
       console.log(error);
     };
 
-	console.log( 'NEW QUERY hashtag' );
 	cachedTweets[hashtag] = tweets; 
 	caller.send( callback( tweets ) );
   });
